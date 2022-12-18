@@ -1,0 +1,12 @@
+.gallery-main .gallery {
+    display: block;
+    text-align: center;
+}
+
+.gallery-main .gallery .gallery-row {
+    display: block;
+}
+
+.gallery-main .gallery .gallery-row img {
+    padding: 32px 16px;
+}

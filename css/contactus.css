@@ -1,0 +1,35 @@
+.contactus-main {
+    width: 90%;
+    margin: 32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactus-main .contactus-row {
+    width: 45%;
+    text-align: center;
+}
+
+.contactus-main .contactus-row .phone {
+    margin: 32px 0;
+}
+.contactus-main .contactus-row h1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+    .contactus-main {
+        display: block;
+        width: 90%;
+        margin: 32px;
+    }
+    
+    .contactus-main .contactus-row {
+        width: 100%;
+    }
+
+    .contactus-main .contactus-row.location-map {
+        padding-top: 32px;
+    }
+}

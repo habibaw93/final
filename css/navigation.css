@@ -1,0 +1,108 @@
+.nav-container {
+    width: 100%;
+}
+
+.navigation {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* For desktops */
+@media screen and (min-width: 769px) {
+    .navigation {
+        background-color: inherit;
+    }
+}
+
+.navigation .nav-list {
+    list-style-type: none;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.navigation .nav-list .nav-list-item {
+    width: 20%;
+    padding-right: 16px;
+    border-right: 1px solid #f5f5f7;
+}
+
+.navigation .nav-list .nav-list-item:last-child {
+    border-right: none;
+}
+
+.navigation .nav-list .nav-list-item a {
+    text-decoration: none;
+
+    color: #f5f5f7;
+    text-transform: uppercase;
+ 
+    display: block;
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navigation .nav-list .nav-list-item a:hover {
+    color: #bad1cf;
+}
+
+.navigation .nav-list .nav-list-item-furniture {
+    position: relative;
+}
+
+.navigation .nav-list .nav-list-item .furniture-options {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    width: 140px;
+    display: none;
+}
+
+.navigation .nav-list .nav-list-item .furniture-options .furniture-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navigation .nav-list .nav-list-item .furniture-options .furniture-list .furniture-list-item {
+    border-top: solid 1px rgb(222, 222, 222);
+    padding: 8px;
+}
+
+.navigation .nav-list .nav-list-item .furniture-options .furniture-list .furniture-list-item a {
+    text-decoration: none;
+}
+
+.navigation .nav-list .nav-list-item-furniture:hover .furniture-options {
+    display: block;
+}
+@media screen and (min-width: 200px) and (max-width: 480px) {
+    .navigation .nav-list {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .navigation .nav-list .nav-list-item {
+        border-right: none;
+        width: 100%;
+        padding: 4px;
+        border-bottom: 1px solid #f5f5f7;
+    }
+
+    .navigation .nav-list .nav-list-item:first-child {
+        padding-top: 0;
+    }
+
+    .navigation .nav-list .nav-list-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .navigation .nav-list .nav-list-item .furniture-options {
+        position: static;
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiniot</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/swipebox.min.css">
+</head>
+<body>
+    <div class="chiniot">
+        <div class="header">
+            <div class="icon">
+                <p class="chiniot">Chiniot</p>
+                <p class="phrase">Royal Art of Hindustan</p>
+            </div>
+            <div class="nav-container">
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="index.html">Home</a></li>
+                        <li class="nav-list-item"><a href="gallery.html">Gallery</a></li>
+                        <li class="nav-list-item nav-list-item-furniture">
+                            <a id="furnitureOptsBtn" href="#">Furniture</a>
+                            <div class="furniture-options">
+                                <ul class="furniture-list">
+                                  <li class="furniture-list-item"><a href="beds.html">Bed Sets</a></li>
+                                  <li class="furniture-list-item"><a href="#">Sofa</a></li>
+                                  <li class="furniture-list-item"><a href="#">Dinning</a></li>
+                                  <li class="furniture-list-item"><a href="#">Dewaans</a></li>   
+                                </ul>
+                              </div>
+                        </li>
+                        <li class="nav-list-item"><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <main class="gallery-main">
+            <div class="gallery">
+                <div class="gallery-row">
+                    <a rel="gallery-1" href="gallery-images/big/pic1.png" class="swipebox">
+                        <img src="gallery-images/small/pic1s.jpg" width="200px" alt="image">
+                    </a>
+                    <a rel="gallery-1" href="gallery-images/big/pic2.png" class="swipebox">
+                        <img src="gallery-images/small/pic2s.jpg" width="200px" alt="image">
+                    </a>
+                    <a rel="gallery-1" href="gallery-images/big/pic3.png" class="swipebox">
+                        <img src="gallery-images/small/pic3s.jpg" width="200px" alt="image">
+                    </a>
+                </div>
+                <div class="gallery-row">
+                    <a rel="gallery-1" href="gallery-images/big/pic4.png" class="swipebox">
+                        <img src="gallery-images/small/pic4s.jpg" width="200px" alt="image">
+                    </a>
+                    <a rel="gallery-1" href="gallery-images/big/pic5.png" class="swipebox">
+                        <img src="gallery-images/small/pic5s.jpg" width="200px"  alt="image">
+                    </a>
+                    <a rel="gallery-1" href="gallery-images/big/pic6.png" class="swipebox">
+                        <img src="gallery-images/small/pic6s.jpg" width="200px"  alt="image">
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="#">Contact Us</a>
+        </footer>
+    </div>
+<script src="lib/jquery-3.5.1.min.js"></script>
+<script src="lib/jquery.swipebox.min.js"></script>   
+
+<script type="text/javascript">
+    ;( function( $ ) {
+    
+        $( '.swipebox' ).swipebox();
+    
+    } )( jQuery );
+    </script>
+</body>
+</html>
